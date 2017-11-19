@@ -70,32 +70,10 @@ const websiteContent = (
     <TopicContainer id="wedding" title="Wedding">
       <div className="container">
         <div className="one-half column">
-          <h2>CEREMONY</h2>
-          <p>16:45 @ Sveti Marak Church Courtyard</p>
-          <p>
-            <a href="img/svetimarak.jpg"><img className="location-image" src="img/svetimarak.jpg" alt="Sveti Marak (St Mark's)" /></a>
-          </p>
-          <p style={{textAlign: "center"}}>
-            <a href="https://goo.gl/maps/7oeGdedkbM72">Google Maps</a> | <a href="img/city-hvar-map.jpg">Tourist Map</a>
-          </p>
-          <p>Located to the left of the Loggia and Clock Tower (the Town Hall) and behind the market and row of shops at the back of the
-             harbour. Follow signs to the Hotel Park and continue past the café until you arrive at the Church. Also have a look at the
-             tourist map above.
-          </p>
+          <h2>Details to come</h2>
         </div>
         <div className="one-half column">
-          <h2>RECEPTION</h2>
-          <p>18:15 @ Bonj les Bains Beach Club</p>
-          <p>
-            <a href="img/bonjlesbainsbeachclub.jpg"><img className="location-image" src="img/bonjlesbainsbeachclub.jpg" alt="Bonj Les Bains Beach Club" /></a>
-          </p>
-          <p style={{textAlign: "center"}}>
-            <a href="https://goo.gl/maps/MGBa94iBaA42">Google Maps</a> | <a href="img/city-hvar-map.jpg">Tourist Map</a>
-          </p>
-          <p>Located a 10 minute walk from Sveti Marak and there will be someone to lead the way. Ladies, please bear in mind that the walk
-             is over a cobbled path, which would not be comfortable if wearing heels, so you might consider bringing a pair of flats for the
-             trek.
-          </p>
+          <h2>Details to come</h2>
         </div>
       </div>
 
