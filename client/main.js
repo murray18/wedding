@@ -60,10 +60,10 @@ const websiteContent = (
 
       <h2>OUR STORY</h2>
       <p>
-        Being children of the modern day and age, our story began with venturing onto OK Cupid. As hesitant as one of us was to engage
-        herself with a complete stranger online (while the other happily explored with enthusiasm) on our first date it soon became
-        apparent that we met the natural occurrences when 2 people meet and all feelings of the unknown disappeared because at that moment
-        right in front of me I was meeting my best friend. As the cliche tale goes, the rest is history.
+      As unlikely as it sounds we first met 10 meters underwater.  Having both heard about the legend of Sir Francis Drake''s illustrious,
+      little known and long missing belly button jewelry, we''d set sail for Panama to find it.  Chance was good to us that day.  Not only did us put
+      us in the same place at the same time in such an unlikely setting but it brought us together then and for the rest of our lives.  Becca wears
+      that belly button button jewelry to this day.
       </p>
     </TopicContainer>
 
