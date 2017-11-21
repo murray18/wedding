@@ -276,40 +276,6 @@ hr {
 }
 
 /**
- * Google Maps
- */
-
-#gmap {
-    margin: 5px 0 10px 0;
-    text-align: center;
-}
-
-#gmap iframe {
-    border: 0;
-    width: 500px;
-
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    border-radius: 8px;
-}
-
-#gmap small a,
-#gmap small a:active,
-#gmap small a:visited {
-    color: #b1bf92;
-    outline: none;
-    text-decoration: none;
-}
-
-#gmap small a:hover {
-    color: #b1bf92;
-    outline: none;
-    text-decoration: underline;
-}
-
-/**
  * Misc
  */
 
@@ -491,8 +457,8 @@ img.location-image {
 /* Phablet */
 @media (max-width: 600px) {
     body {
-        background-image: url('../img/bgimage.jpg');
-        background-size: 140%;
+      background-image: url('../img/bgimage.jpg');
+        background-size:200%;
     }
 
     h1 {
@@ -535,11 +501,6 @@ img.location-image {
 
     img.large-image {
         max-width: 75%;
-    }
-
-    #gmap iframe {
-        border: 0;
-        width: 220px;
     }
 }
 
