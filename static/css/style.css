@@ -4,7 +4,7 @@
  * Common elements
  */
 
-* { 
+* {
     border: 0;
     margin: 0;
     padding: 0;
@@ -491,7 +491,7 @@ img.location-image {
 /* Phablet */
 @media (max-width: 600px) {
     body {
-        background-image: url('../img/bgimage-mobile.jpg');
+        background-image: url('../img/bgimage.jpg');
         background-size: 140%;
     }
 

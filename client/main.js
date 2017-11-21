@@ -39,14 +39,14 @@ const websiteContent = (
           <div className="one-half column">
             <p>
               <a href="img/jocelyn-baby.jpg"><img className="thumbnail" src="img/becca_1.jpg" alt="Becca" /></a>
-              Becca is the best!
+              The lovelies
             </p>
           </div>
 
           <div className="one-half column">
             <p>
               <a href="img/kal-baby.jpg"><img className="thumbnail" src="img/neil_1.jpg" alt="Neil" /></a>
-              Neil is the luckiest!
+              The curious developer with a passion for life, food, travel and most of all Becca!
             </p>
           </div>
         </div>
