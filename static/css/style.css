@@ -13,7 +13,8 @@
 
 body {
     background-attachment: fixed;
-    background-image: url('../img/bgimage.jpg');
+    /*background-image: url('../img/bgimage.jpg');*/
+    /*background-size: 100%;*/
     background-position-x: center;
     background-position-y: top;
     background-repeat: no-repeat;
@@ -69,9 +70,9 @@ hr {
     text-shadow: none;
 }
 
-#content {
-    padding-top: 200px;
-    padding-bottom: 300px;
+#titlebar {
+    margin-top: 200px;
+    margin-bottom: 300px;
 }
 
 /**
@@ -80,7 +81,7 @@ hr {
 
 .titlebar {
     background-color: black;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.6);
     border-radius: 8px;
     display: block;
     margin: auto;
@@ -457,8 +458,9 @@ img.location-image {
 /* Phablet */
 @media (max-width: 600px) {
     body {
-      background-image: url('../img/bgimage.jpg');
-        background-size:200%;
+        /*background-image: url('../img/bgimage.jpg');*/
+        background-size:175%;
+        background-color: black;
     }
 
     h1 {

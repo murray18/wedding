@@ -7,6 +7,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Sticky from 'react-stickynode';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { Parallax, Background } from 'react-parallax';
 
 import Menu from './components/Menu.component';
 import RSVPForm from './components/RSVPForm.component';
@@ -16,6 +18,20 @@ import TopicContainer from './components/TopicContainer.component';
 
 const websiteContent = (
   <div>
+
+  <Parallax strength={600} bgWidth={'100%'}>
+    <Background>
+      <img src="../img/ruins.jpg"/>
+    <div style={{
+        //backgroundSize: 'cover',
+        width: '100%',
+        height: 300,
+        paddingTop: 50,
+        backgroundColor: 'black'
+    }}></div>
+    <img src="../img/bgimage.jpg"/>
+    </Background>
+
 
     <TitleBar id="titlebar">
     </TitleBar>
@@ -78,38 +94,8 @@ const websiteContent = (
       </div>
 
       <hr />
-
-      <h2>ON THE WEDDING DAY</h2>
-      <p>The ceremony will start at 17:00 at the Sveti Marak church courtyard. Please arrive 10 to 15 minutes before so everybody can get
-         seated and so we can start on time.
-      </p>
-      <p>After the ceremony we will raise a glass of champagne and someone will lead you to the reception where drinks and appetizers will
-         be served.
-      </p>
-      <p>
-        Wedding attire is summer formal. Gentlemen, please wear a light suit with which you will be comfortable with the heat. And ladies,
-        you look pretty as you are, in your formal summer dresses :)
-      </p>
-
-      <hr />
-
-      <h2>DAY BEFORE THE WEDDING (30 August)</h2>
-      <p>Welcome cocktails will be held on the terrace of <a href="https://goo.gl/Vd3ZJd">Restaurant Park Hvar</a> from 18:30 to 23:30.
-      </p>
-      <p>
-         Cocktail night attire is dressy-casual.
-      </p>
-
-      <hr />
-
-      <h2>DAY AFTER THE WEDDING (1 September)</h2>
-      <p>Farewell brunch will be held at 11:00 at the&nbsp;
-         <a href="http://www.suncanihvar.com/amfora-hvar-grand-beach-resort/maestral-balkan-grill.html">Maestral Restaurant</a>. It is located
-         just a few meters on the path that takes you to the <a href="https://goo.gl/r9TFHt">wedding venue</a>.
-      </p>
-      <p>
-         Brunch attire is wear anything you want :)
-      </p>
+      <h1>More to come!</h1>
+      <p>This is THE go to source for Becca & Neil wedding info.</p>
     </TopicContainer>
 
     <TopicContainer id="rsvp" title="RSVP">
@@ -126,7 +112,7 @@ const websiteContent = (
       <h1>Another topic container</h1>
       <p>Text goes here</p>
     </TopicContainer>
-
+</Parallax>
   </div>
 );
 
