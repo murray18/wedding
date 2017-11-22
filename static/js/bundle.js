@@ -14650,138 +14650,155 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var websiteContent = _react2.default.createElement(
   'div',
   null,
-  _react2.default.createElement(_TitleBar2.default, { id: 'titlebar' }),
-  _react2.default.createElement('div', { style: { height: '200px' } }),
   _react2.default.createElement(
-    _reactStickynode2.default,
-    { enabled: true },
-    _react2.default.createElement(_Menu2.default, { id: 'menu',
-      items: [{ label: 'THE BRIDE & GROOM', href: 'brideandgroom' }, { label: 'THE WEDDING', href: 'wedding' }, { label: 'RSVP', href: 'rsvp' }, { label: 'LOGISTICS', href: 'logistics' }, { label: 'THINGS TO DO', href: 'thingstodo' }, { label: 'GIFTS', href: 'gifts' }] })
-  ),
-  _react2.default.createElement(
-    _TopicContainer2.default,
-    { id: 'brideandgroom', name: 'brideandgroom', title: 'The Bride and Groom' },
+    _reactParallax.Parallax,
+    { strength: 600, bgWidth: '100%' },
     _react2.default.createElement(
-      'div',
-      { className: 'container' },
+      _reactParallax.Background,
+      null,
+      _react2.default.createElement('img', { src: '../img/ruins.jpg' }),
+      _react2.default.createElement('div', { style: {
+          //backgroundSize: 'cover',
+          width: '100%',
+          height: 300,
+          paddingTop: 50,
+          backgroundColor: 'black'
+        } }),
+      _react2.default.createElement('img', { src: '../img/bgimage.jpg' })
+    ),
+    _react2.default.createElement(_TitleBar2.default, { id: 'titlebar' }),
+    _react2.default.createElement('div', { style: { height: '200px' } }),
+    _react2.default.createElement(
+      _reactStickynode2.default,
+      { enabled: true },
+      _react2.default.createElement(_Menu2.default, { id: 'menu',
+        items: [{ label: 'THE BRIDE & GROOM', href: 'brideandgroom' }, { label: 'THE WEDDING', href: 'wedding' }, { label: 'RSVP', href: 'rsvp' }, { label: 'LOGISTICS', href: 'logistics' }, { label: 'THINGS TO DO', href: 'thingstodo' }, { label: 'GIFTS', href: 'gifts' }] })
+    ),
+    _react2.default.createElement(
+      _TopicContainer2.default,
+      { id: 'brideandgroom', name: 'brideandgroom', title: 'The Bride and Groom' },
       _react2.default.createElement(
         'div',
-        { className: 'row' },
+        { className: 'container' },
+        _react2.default.createElement(
+          'div',
+          { className: 'row' },
+          _react2.default.createElement(
+            'div',
+            { className: 'one-half column' },
+            _react2.default.createElement(
+              'p',
+              null,
+              _react2.default.createElement(
+                'a',
+                { href: 'img/jocelyn-baby.jpg' },
+                _react2.default.createElement('img', { className: 'thumbnail', src: 'img/becca_1.jpg', alt: 'Becca' })
+              ),
+              'The lovelies'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'one-half column' },
+            _react2.default.createElement(
+              'p',
+              null,
+              _react2.default.createElement(
+                'a',
+                { href: 'img/kal-baby.jpg' },
+                _react2.default.createElement('img', { className: 'thumbnail', src: 'img/neil_1.jpg', alt: 'Neil' })
+              ),
+              'The curious developer with a passion for life, food, travel and most of all Becca!'
+            )
+          )
+        )
+      ),
+      _react2.default.createElement('hr', null),
+      _react2.default.createElement(
+        'p',
+        null,
+        _react2.default.createElement('img', { className: 'large-image', src: 'img/proposal.jpg', alt: 'Kal Proposing To Jocelyn' })
+      ),
+      _react2.default.createElement(
+        'h2',
+        null,
+        'OUR STORY'
+      ),
+      _react2.default.createElement(
+        'p',
+        null,
+        'As unlikely as it sounds we first met 10 meters underwater.  Having both heard about the legend of Sir Francis Drake\'\'s illustrious, little known and long missing belly button jewelry, we\'\'d set sail for Panama to find it.  Chance was good to us that day.  Not only did us put us in the same place at the same time in such an unlikely setting but it brought us together then and for the rest of our lives.  Becca wears that belly button button jewelry to this day.'
+      )
+    ),
+    _react2.default.createElement(
+      _TopicContainer2.default,
+      { id: 'wedding', title: 'Wedding' },
+      _react2.default.createElement(
+        'div',
+        { className: 'container' },
         _react2.default.createElement(
           'div',
           { className: 'one-half column' },
           _react2.default.createElement(
-            'p',
+            'h2',
             null,
-            _react2.default.createElement(
-              'a',
-              { href: 'img/jocelyn-baby.jpg' },
-              _react2.default.createElement('img', { className: 'thumbnail', src: 'img/becca_1.jpg', alt: 'Becca' })
-            ),
-            'The lovelies'
+            'Details to come'
           )
         ),
         _react2.default.createElement(
           'div',
           { className: 'one-half column' },
           _react2.default.createElement(
-            'p',
+            'h2',
             null,
-            _react2.default.createElement(
-              'a',
-              { href: 'img/kal-baby.jpg' },
-              _react2.default.createElement('img', { className: 'thumbnail', src: 'img/neil_1.jpg', alt: 'Neil' })
-            ),
-            'The curious developer with a passion for life, food, travel and most of all Becca!'
+            'Details to come'
           )
         )
-      )
-    ),
-    _react2.default.createElement('hr', null),
-    _react2.default.createElement(
-      'p',
-      null,
-      _react2.default.createElement('img', { className: 'large-image', src: 'img/proposal.jpg', alt: 'Kal Proposing To Jocelyn' })
-    ),
-    _react2.default.createElement(
-      'h2',
-      null,
-      'OUR STORY'
-    ),
-    _react2.default.createElement(
-      'p',
-      null,
-      'As unlikely as it sounds we first met 10 meters underwater.  Having both heard about the legend of Sir Francis Drake\'\'s illustrious, little known and long missing belly button jewelry, we\'\'d set sail for Panama to find it.  Chance was good to us that day.  Not only did us put us in the same place at the same time in such an unlikely setting but it brought us together then and for the rest of our lives.  Becca wears that belly button button jewelry to this day.'
-    )
-  ),
-  _react2.default.createElement(
-    _TopicContainer2.default,
-    { id: 'wedding', title: 'Wedding' },
-    _react2.default.createElement(
-      'div',
-      { className: 'container' },
+      ),
+      _react2.default.createElement('hr', null),
       _react2.default.createElement(
-        'div',
-        { className: 'one-half column' },
-        _react2.default.createElement(
-          'h2',
-          null,
-          'Details to come'
-        )
+        'h1',
+        null,
+        'More to come!'
       ),
       _react2.default.createElement(
-        'div',
-        { className: 'one-half column' },
-        _react2.default.createElement(
-          'h2',
-          null,
-          'Details to come'
-        )
+        'p',
+        null,
+        'This is THE go to source for Becca & Neil wedding info.'
       )
     ),
-    _react2.default.createElement('hr', null),
     _react2.default.createElement(
-      'h1',
-      null,
-      'More to come!'
+      _TopicContainer2.default,
+      { id: 'rsvp', title: 'RSVP' },
+      _react2.default.createElement(_RSVPForm2.default, null)
     ),
     _react2.default.createElement(
-      'p',
-      null,
-      'This is THE go to source for Becca & Neil wedding info.'
-    )
-  ),
-  _react2.default.createElement(
-    _TopicContainer2.default,
-    { id: 'rsvp', title: 'RSVP' },
-    _react2.default.createElement(_RSVPForm2.default, null)
-  ),
-  _react2.default.createElement(
-    _TopicContainer2.default,
-    { id: 'logistics', title: 'Logistics' },
-    _react2.default.createElement(
-      'h1',
-      null,
-      'This is a topic container.  We will put content in here'
+      _TopicContainer2.default,
+      { id: 'logistics', title: 'Logistics' },
+      _react2.default.createElement(
+        'h1',
+        null,
+        'This is a topic container.  We will put content in here'
+      ),
+      _react2.default.createElement(
+        'p',
+        null,
+        'More Text here'
+      )
     ),
     _react2.default.createElement(
-      'p',
-      null,
-      'More Text here'
-    )
-  ),
-  _react2.default.createElement(
-    _TopicContainer2.default,
-    { id: 'thingstodo', title: 'Things to do in Croatia' },
-    _react2.default.createElement(
-      'h1',
-      null,
-      'Another topic container'
-    ),
-    _react2.default.createElement(
-      'p',
-      null,
-      'Text goes here'
+      _TopicContainer2.default,
+      { id: 'thingstodo', title: 'Things to do in Croatia' },
+      _react2.default.createElement(
+        'h1',
+        null,
+        'Another topic container'
+      ),
+      _react2.default.createElement(
+        'p',
+        null,
+        'Text goes here'
+      )
     )
   )
 );
