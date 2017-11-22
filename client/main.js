@@ -19,18 +19,6 @@ import TopicContainer from './components/TopicContainer.component';
 const websiteContent = (
   <div>
 
-  // <Parallax strength={600} bgWidth={'100%'}>
-  //   <Background>
-  //     <img src="../img/ruins.jpg"/>
-  //   <div style={{
-  //       //backgroundSize: 'cover',
-  //       width: '100%',
-  //       height: 300,
-  //       paddingTop: 50,
-  //       backgroundColor: 'black'
-  //   }}></div>
-  //   <img src="../img/bgimage.jpg"/>
-  //   </Background>
 
 
     <TitleBar id="titlebar">
@@ -112,7 +100,6 @@ const websiteContent = (
       <h1>Another topic container</h1>
       <p>Text goes here</p>
     </TopicContainer>
-//</Parallax>
   </div>
 );
 
