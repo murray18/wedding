@@ -7,7 +7,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Sticky from 'react-stickynode';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { Parallax, Background } from 'react-parallax';
 
 import Menu from './components/Menu.component';
