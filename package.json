@@ -1,18 +1,19 @@
 {
-  "name": "jociandkalwedding",
+  "name": "beccaandneilwedding",
   "version": "1.0.0",
-  "description": "Jocelyn & Kal Wedding Website",
+  "description": "Becca & Neil's Wedding Website",
   "private": true,
   "bin": "./bin/app.bundle.js",
   "scripts": {
     "install": "webpack",
+    "watch": "webpack --watch",
     "start": "node ./bin/app.bundle.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kaloianm/wedding.git"
   },
-  "author": "Kaloian Manassiev",
+  "author": "Kaloian Manassiev & Neil Cousineau",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kaloianm/wedding/issues"

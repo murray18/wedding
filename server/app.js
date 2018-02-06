@@ -49,7 +49,7 @@ async.waterfall([
         WebApp.use(
             '/',
             cookieParser(),
-            function (req, res, next) {
+            function (req, res, next) { 
                 if (req.path === '/') {
                     new WebsiteVisitor({
                         ip: req.ip,

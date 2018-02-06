@@ -4,6 +4,17 @@
  * Common elements
  */
 
+.centered h2, .centered p {
+  text-align: center;
+}
+.centered {
+  text-align: center;
+}
+
+label {
+  font-size: 1.3em;
+}
+
 * {
     border: 0;
     margin: 0;
@@ -13,7 +24,7 @@
 
 body {
     background-attachment: fixed;
-    background-image: url('../img/bgimage.jpg');
+    background-image: url('../img/bgimage_wine.jpg');
     background-position-x: center;
     background-position-y: top;
     background-repeat: no-repeat;
@@ -193,7 +204,7 @@ hr {
 
 .wizard-form input[type='radio'] {
     float: left;
-    margin: 3px 6px;
+    margin: 7px 6px;
 }
 
 .wizard-form button {
@@ -206,7 +217,7 @@ hr {
     font-size: inherit;
     text-align: center;
     text-decoration: none;
-    width: 100%;
+    width: 50%;
 
     -webkit-transition-duration: 0.3s; /* Safari */
     transition-duration: 0.3s;

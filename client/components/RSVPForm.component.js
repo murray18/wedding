@@ -1,6 +1,6 @@
 /**
  * Implements the reservation form wizard and interaction with the server.
- * 
+ *
  * id (string): Identifier for the element
  */
 
@@ -24,7 +24,6 @@ class RSVPForm extends React.Component {
         this.state = {
             guestInfo: {},
             guestPlusOneInfo: {},
-
             submitStatus: null,
         };
     }
@@ -45,111 +44,40 @@ class RSVPForm extends React.Component {
                 <p>Fields marked with * are mandatory.</p>
                 <br />
 
-                {this.renderTextInput('name', 'Name*:', guestInfo)}
+                {this.renderTextInput('name', 'Name:', guestInfo)}
                 {this.renderTextInput('email', 'Email*:', guestInfo)}
+                {this.renderCheckboxInput(
+                    'attendance',
+                    'Plus one*:',
+                    [
+                        { label: 'Add a plus one', value: 'yes' },
+                    ],
+                    guestPlusOneInfo)}
+
                 <br />
+
+                {guestPlusOneInfo.attendance === true &&
+                  <div>
+                    {this.renderTextInput('name', 'Name:', guestPlusOneInfo)}
+                    {this.renderTextInput('name', 'Email:', guestPlusOneInfo)}
+                    <br />
+                  </div>
+                }
+
+                <br />
+
+                {this.renderTextInput('address', 'Address, State, Zip, Country:', guestInfo)}
+
 
                 {this.renderRadioInput(
                     'attendance',
                     'Attendance*:',
                     [
-                        { label: 'I WILL BE ATTENDING', value: 'yes' },
-                        { label: 'I WILL NOT BE ATTENDING', value: 'no' }
+                        { label: 'Yes, I will definitely be there!', value: 'yes' },
+                        { label: 'Not sure.  It is too soon to decide but I will be considering it.', value: 'maybe' },
+                        { label: 'No way José!  Destination weddings are sooo 2018.', value: 'no' }
                     ],
                     guestInfo)
-                }
-                <br />
-
-                {guestInfo.attendance === 'yes' &&
-                    <div>
-                        {this.renderRadioInput(
-                            'meal',
-                            'Entreé preference*:',
-                            [
-                                { label: 'I EAT MEAT', value: 'meat' },
-                                { label: 'I DO NOT EAT MEAT', value: 'vegetarian' }
-                            ],
-                            guestInfo)}
-                        <br />
-
-                        {this.renderTextInput(
-                            'dietaryRestrictions',
-                            'Any other dietary restrictions?',
-                            guestInfo)}
-                        <br />
-
-                        {this.renderRadioInput(
-                            'cocktailEvening',
-                            'Will you be joining us for the cocktail evening on 30 August (day before the wedding)*?',
-                            [
-                                { label: 'YES', value: 'yes' },
-                                { label: 'NO', value: 'no' }
-                            ],
-                            guestInfo)}
-                        <br />
-
-                        {this.renderRadioInput(
-                            'hangoverBrunch',
-                            'Will you be joining us for the boozy farewell brunch on 1 September (day after the wedding)*?',
-                            [
-                                { label: 'YES', value: 'yes' },
-                                { label: 'NO', value: 'no' }
-                            ],
-                            guestInfo)}
-                        <br />
-
-                        {this.renderRadioInput(
-                            'attendance',
-                            'Plus one*:',
-                            [
-                                { label: 'I WILL BE BRINGING A PLUS ONE', value: 'yes' },
-                                { label: 'I WILL NOT BE BRINGING A PLUS ONE', value: 'no' }
-                            ],
-                            guestPlusOneInfo)}
-                    </div>
-                }
-                <br />
-
-                {guestInfo.attendance === 'yes' && guestPlusOneInfo.attendance === 'yes' &&
-                    <div>
-                        {this.renderTextInput('name', 'Name:', guestPlusOneInfo)}
-                        <br />
-                        {this.renderRadioInput(
-                            'meal',
-                            'Entreé preference*:',
-                            [
-                                { label: 'I EAT MEAT', value: 'meat' },
-                                { label: 'I DO NOT EAT MEAT', value: 'vegetarian' }
-                            ],
-                            guestPlusOneInfo)}
-                        <br />
-
-                        {this.renderTextInput(
-                            'dietaryRestrictions',
-                            'Other dietary restrictions?',
-                            guestPlusOneInfo)}
-                        <br />
-
-                        {this.renderRadioInput(
-                            'cocktailEvening',
-                            'Will you be joining us for the cocktail evening on 30 August (day before the wedding)*?',
-                            [
-                                { label: 'YES', value: 'yes' },
-                                { label: 'NO', value: 'no' }
-                            ],
-                            guestPlusOneInfo)}
-                        <br />
-
-                        {this.renderRadioInput(
-                            'hangoverBrunch',
-                            'Will you be joining us for the boozy farewell brunch on 1 September (day after the wedding)*?',
-                            [
-                                { label: 'YES', value: 'yes' },
-                                { label: 'NO', value: 'no' }
-                            ],
-                            guestPlusOneInfo)}
-                        <br />
-                    </div>
                 }
                 <br />
 
@@ -161,8 +89,9 @@ class RSVPForm extends React.Component {
                     </div>
                 }
                 <br />
-
+            <div className="centered">
                 <button onClick={this.submitRSVP.bind(this)}>Submit</button>
+              </div>
             </div>
         );
     }
@@ -242,7 +171,7 @@ class RSVPForm extends React.Component {
     /**
      * Renders a text input with a label and the specified set of options. Gets its state and
      * updates the specified @stateObj.
-     * 
+     *
      * The format of the options is an array of JSON objects with the following properties:
      *  label - Label of the option
      *  value - Value of the option to be set on the @stateObj
@@ -266,6 +195,46 @@ class RSVPForm extends React.Component {
                                 <input type="radio"
                                     value={option.value}
                                     checked={value === option.value}
+                                    onChange={onChange} />
+                                <label>{option.label}</label>
+                            </div>
+                        );
+                    })
+                }
+            </div>
+        );
+    }
+
+    /**
+     * Renders a text input with a label and the specified set of options. Gets its state and
+     * updates the specified @stateObj.
+     *
+     * The format of the options is an array of JSON objects with the following properties:
+     *  label - Label of the option
+     *  value - Value of the option to be set on the @stateObj
+     */
+    renderCheckboxInput(name, label, options, stateObj) {
+        const self = this;
+        //const value = stateObj[name];
+
+        function onChange(event) {
+          const target = event.target;
+          const value = target.type === 'checkbox' ? target.checked : target.value;
+          stateObj[name] = value;
+
+          self.setState(self.state);
+        }
+
+        return (
+            <div className="rsvp-section">
+                <label>{label}</label>
+                {
+                    options.map(function (option) {
+                        return (
+                            <div key={option.value}>
+                                <input type="checkbox"
+                                    value={option.value}
+                                    checked={stateObj[name]}
                                     onChange={onChange} />
                                 <label>{option.label}</label>
                             </div>

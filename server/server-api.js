@@ -21,7 +21,7 @@ ServerAPI.use(bodyParser.json());
 // Help for the web service
 ServerAPI.all('/', function (req, res) {
     res.status(400).json({
-        name: 'Kal and Jocelyn\'s wedding website API',
+        name: 'Becca & Neils wedding website API',
         version: process.env.npm_package_version,
         availableAPIs: {
             rsvp: {
