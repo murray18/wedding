@@ -12693,30 +12693,37 @@ var RSVPForm = function (_React$Component) {
                 _react2.default.createElement(
                     'p',
                     null,
-                    'Please complete the form below to let us know if you will be joining us in Hvar and to inform us of your dietary restrictions if any.'
+                    'Please complete the form below to let us know if you will be joining us in Italy.'
                 ),
                 _react2.default.createElement('br', null),
                 _react2.default.createElement(
-                    'p',
+                    'h2',
                     null,
-                    'Fields marked with * are mandatory.'
+                    'Guest Information'
                 ),
-                _react2.default.createElement('br', null),
                 this.renderTextInput('name', 'Name:', guestInfo),
-                this.renderTextInput('email', 'Email*:', guestInfo),
-                this.renderCheckboxInput('attendance', 'Plus one*:', [{ label: 'Add a plus one', value: 'yes' }], guestPlusOneInfo),
-                _react2.default.createElement('br', null),
-                guestPlusOneInfo.attendance === true && _react2.default.createElement(
-                    'div',
-                    null,
-                    this.renderTextInput('name', 'Name:', guestPlusOneInfo),
-                    this.renderTextInput('name', 'Email:', guestPlusOneInfo),
-                    _react2.default.createElement('br', null)
-                ),
-                _react2.default.createElement('br', null),
+                this.renderTextInput('email', 'Email:', guestInfo),
                 this.renderTextInput('address', 'Address, State, Zip, Country:', guestInfo),
                 this.renderRadioInput('attendance', 'Attendance*:', [{ label: 'Yes, I will definitely be there!', value: 'yes' }, { label: 'Not sure.  It is too soon to decide but I will be considering it.', value: 'maybe' }, { label: 'No way José!  Destination weddings are sooo 2018.', value: 'no' }], guestInfo),
                 _react2.default.createElement('br', null),
+                guestInfo.attendance === 'yes' && _react2.default.createElement(
+                    'div',
+                    null,
+                    this.renderCheckboxInput('attendance', '', [{ label: ' Add a plus one', value: 'yes' }], guestPlusOneInfo),
+                    _react2.default.createElement('br', null),
+                    guestPlusOneInfo.attendance === true && _react2.default.createElement(
+                        'div',
+                        null,
+                        _react2.default.createElement(
+                            'h2',
+                            null,
+                            'Plus One Information'
+                        ),
+                        this.renderTextInput('name', 'Name:', guestPlusOneInfo),
+                        this.renderTextInput('name', 'Email:', guestPlusOneInfo),
+                        _react2.default.createElement('br', null)
+                    )
+                ),
                 this.state.submitStatus && _react2.default.createElement(
                     'div',
                     { className: this.state.submitStatus.isError ? 'alert-error' : 'alert-success' },

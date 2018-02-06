@@ -36,50 +36,51 @@ class RSVPForm extends React.Component {
 
         return (
             <div id={this.props.id} className="wizard-form">
-                <p>Please complete the form below to let us know if you will be joining us in Hvar and to inform us of your dietary restrictions
-                   if any.
-                </p>
+                <p>Please complete the form below to let us know if you will be joining us in Italy.</p>
                 <br />
 
-                <p>Fields marked with * are mandatory.</p>
-                <br />
-
+                <h2>Guest Information</h2>
                 {this.renderTextInput('name', 'Name:', guestInfo)}
-                {this.renderTextInput('email', 'Email*:', guestInfo)}
-                {this.renderCheckboxInput(
-                    'attendance',
-                    'Plus one*:',
-                    [
-                        { label: 'Add a plus one', value: 'yes' },
-                    ],
-                    guestPlusOneInfo)}
-
-                <br />
-
-                {guestPlusOneInfo.attendance === true &&
-                  <div>
-                    {this.renderTextInput('name', 'Name:', guestPlusOneInfo)}
-                    {this.renderTextInput('name', 'Email:', guestPlusOneInfo)}
-                    <br />
-                  </div>
-                }
-
-                <br />
-
+                {this.renderTextInput('email', 'Email:', guestInfo)}
                 {this.renderTextInput('address', 'Address, State, Zip, Country:', guestInfo)}
-
-
                 {this.renderRadioInput(
-                    'attendance',
-                    'Attendance*:',
-                    [
-                        { label: 'Yes, I will definitely be there!', value: 'yes' },
-                        { label: 'Not sure.  It is too soon to decide but I will be considering it.', value: 'maybe' },
-                        { label: 'No way José!  Destination weddings are sooo 2018.', value: 'no' }
-                    ],
-                    guestInfo)
+                  'attendance',
+                  'Attendance*:',
+                  [
+                    { label: 'Yes, I will definitely be there!', value: 'yes' },
+                    { label: 'Not sure.  It is too soon to decide but I will be considering it.', value: 'maybe' },
+                    { label: 'No way José!  Destination weddings are sooo 2018.', value: 'no' }
+                  ],
+                  guestInfo)
                 }
                 <br />
+
+                {guestInfo.attendance === 'yes' &&
+                  <div>
+                  {this.renderCheckboxInput(
+                    'attendance',
+                    '',
+                    [
+                      { label: ' Add a plus one', value: 'yes' },
+                    ],
+                    guestPlusOneInfo)
+                  }
+
+                  <br />
+
+                  {guestPlusOneInfo.attendance === true &&
+                    <div>
+                      <h2>Plus One Information</h2>
+                      {this.renderTextInput('name', 'Name:', guestPlusOneInfo)}
+                      {this.renderTextInput('name', 'Email:', guestPlusOneInfo)}
+                      <br />
+                    </div>
+                  }
+                </div>
+              }
+
+
+
 
                 {this.state.submitStatus &&
                     <div className={this.state.submitStatus.isError ? 'alert-error' : 'alert-success'}>
