@@ -36,18 +36,20 @@ class RSVPForm extends React.Component {
 
         return (
             <div id={this.props.id} className="wizard-form">
-                <p>Please complete the form below to let us know if you will be joining us in Italy.</p>
+                <p>Please complete the form below before <font color="red">MARCH 1ST</font> to let us know if you will be joining us in Italy. We know it is early and it is ok to be "not sure."  Everyone is welcome at the Celebracation, we just may not have room for you at the Villa if you decide later.</p>
                 <br />
 
-                <h2>Guest Information</h2>
+                <h2>Your Information</h2>
                 {this.renderTextInput('name', 'Name:', guestInfo)}
                 {this.renderTextInput('email', 'Email:', guestInfo)}
                 {this.renderTextInput('address', 'Address, State, Zip, Country:', guestInfo)}
+                <br />
                 {this.renderRadioInput(
                   'attendance',
                   'Attendance*:',
                   [
-                    { label: 'Yes, I will definitely be there!', value: 'yes' },
+                    { label: 'Yes, I will definitely be there and would love to stay in the villa.', value: 'yes' },
+                    { label: 'Yes, I will be at the celebration, but will find my own accomodations.', value: 'yesnovilla' },
                     { label: 'Not sure.  It is too soon to decide but I will be considering it.', value: 'maybe' },
                     { label: 'No way José!  Destination weddings are sooo 2018.', value: 'no' }
                   ],
@@ -55,7 +57,7 @@ class RSVPForm extends React.Component {
                 }
                 <br />
 
-                {guestInfo.attendance === 'yes' &&
+                {(guestInfo.attendance === 'yes' || guestInfo.attendance === 'yesnovilla') &&
                   <div>
                   {this.renderCheckboxInput(
                     'attendance',
@@ -78,10 +80,6 @@ class RSVPForm extends React.Component {
                   }
                 </div>
               }
-
-
-
-
                 {this.state.submitStatus &&
                     <div className={this.state.submitStatus.isError ? 'alert-error' : 'alert-success'}>
                         <span className="alert-closebtn"

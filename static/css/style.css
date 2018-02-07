@@ -11,8 +11,33 @@
   text-align: center;
 }
 
+img.centered {
+  display:block;
+  width: 50%;
+  margin: auto;
+  border: 0px solid white;
+  margin-bottom: 25px;
+}
+
+img.center {
+  display:block;
+  width: 100%;
+  margin: auto;
+  border: 0px solid white;
+  margin-bottom: 25px;
+}
+
+img.right {
+  float: right;
+  width: 40%;
+  margin: auto;
+  border: 0px solid white;
+  margin-bottom: 25px;
+  margin-left: 25px;
+}
+
 label {
-  font-size: 1.3em;
+  font-size: 1.7em;
 }
 
 * {
@@ -42,7 +67,7 @@ a {
 }
 
 h1 {
-    font-family: "EdwardianScrAltITCTT", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: "FuturaLTBook", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 6em;
     padding-bottom: 20px;
 }
@@ -50,6 +75,7 @@ h1 {
 h2 {
     font-size: 1.7em;
     padding-bottom: 15px;
+    font-weight: bold;
 }
 
 h3 {
@@ -59,7 +85,7 @@ h3 {
 }
 
 p {
-    font-size: 1.4em;
+    font-size: 1.7em;
     padding-bottom: 8px;
 }
 
@@ -81,7 +107,7 @@ hr {
 }
 
 #content {
-    padding-top: 200px;
+    padding-top: 100px;
     padding-bottom: 300px;
 }
 
@@ -168,9 +194,12 @@ hr {
     width: 80%;
 }
 
+#brideandgroom {
+    padding-top: 0px;
+}
 .topic-wrapper section {
     background-color: black;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 40px 40px 70px 40px;
     text-align: left;
@@ -218,6 +247,7 @@ hr {
     text-align: center;
     text-decoration: none;
     width: 50%;
+    font-size: 1.7em;
 
     -webkit-transition-duration: 0.3s; /* Safari */
     transition-duration: 0.3s;
@@ -468,7 +498,7 @@ img.location-image {
 /* Phablet */
 @media (max-width: 600px) {
     body {
-      background-image: url('../img/bgimage.jpg');
+      background-image: url('../img/bgimage_wine.jpg');
         background-size:200%;
     }
 
@@ -513,6 +543,14 @@ img.location-image {
     img.large-image {
         max-width: 75%;
     }
+}
+
+.wizard-form input[type='text'] {
+    font-size: 1em;
+}
+
+label {
+  font-size: 1em;
 }
 
 /* Phone */

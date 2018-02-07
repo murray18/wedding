@@ -12693,20 +12693,27 @@ var RSVPForm = function (_React$Component) {
                 _react2.default.createElement(
                     'p',
                     null,
-                    'Please complete the form below to let us know if you will be joining us in Italy.'
+                    'Please complete the form below before ',
+                    _react2.default.createElement(
+                        'font',
+                        { color: 'red' },
+                        'MARCH 1ST'
+                    ),
+                    ' to let us know if you will be joining us in Italy. We know it is early and it is ok to be "not sure."  Everyone is welcome at the Celebracation, we just may not have room for you at the Villa if you decide later.'
                 ),
                 _react2.default.createElement('br', null),
                 _react2.default.createElement(
                     'h2',
                     null,
-                    'Guest Information'
+                    'Your Information'
                 ),
                 this.renderTextInput('name', 'Name:', guestInfo),
                 this.renderTextInput('email', 'Email:', guestInfo),
                 this.renderTextInput('address', 'Address, State, Zip, Country:', guestInfo),
-                this.renderRadioInput('attendance', 'Attendance*:', [{ label: 'Yes, I will definitely be there!', value: 'yes' }, { label: 'Not sure.  It is too soon to decide but I will be considering it.', value: 'maybe' }, { label: 'No way José!  Destination weddings are sooo 2018.', value: 'no' }], guestInfo),
                 _react2.default.createElement('br', null),
-                guestInfo.attendance === 'yes' && _react2.default.createElement(
+                this.renderRadioInput('attendance', 'Attendance*:', [{ label: 'Yes, I will definitely be there and would love to stay in the villa.', value: 'yes' }, { label: 'Yes, I will be at the celebration, but will find my own accomodations.', value: 'yesnovilla' }, { label: 'Not sure.  It is too soon to decide but I will be considering it.', value: 'maybe' }, { label: 'No way José!  Destination weddings are sooo 2018.', value: 'no' }], guestInfo),
+                _react2.default.createElement('br', null),
+                (guestInfo.attendance === 'yes' || guestInfo.attendance === 'yesnovilla') && _react2.default.createElement(
                     'div',
                     null,
                     this.renderCheckboxInput('attendance', '', [{ label: ' Add a plus one', value: 'yes' }], guestPlusOneInfo),
@@ -13340,13 +13347,19 @@ var websiteContent = _react2.default.createElement(
   null,
   _react2.default.createElement(
     _TopicContainer2.default,
-    { id: 'brideandgroom', name: 'celebracation', title: 'The Celebracation' },
+    { id: 'brideandgroom', name: 'celebracation' },
     _react2.default.createElement(
       'div',
       { className: 'container' },
       _react2.default.createElement(
         'div',
         { className: 'row' },
+        _react2.default.createElement(
+          'h1',
+          { className: 'centered' },
+          'Neil & Becca'
+        ),
+        _react2.default.createElement('img', { src: 'img/definition.gif', className: 'centered' }),
         _react2.default.createElement(
           'p',
           null,
@@ -13356,7 +13369,7 @@ var websiteContent = _react2.default.createElement(
         _react2.default.createElement(
           'p',
           null,
-          'WHAT: The Celebracation!   Celebra-cation: n. Slang for celebrating Neil and Becca\'s nuptials while on vacation.'
+          'WHAT: The Celebracation!'
         ),
         _react2.default.createElement(
           'p',
@@ -13368,6 +13381,8 @@ var websiteContent = _react2.default.createElement(
           null,
           'WHERE: Tuscany, Italy'
         ),
+        _react2.default.createElement('br', null),
+        _react2.default.createElement('img', { src: 'img/florence.jpg', className: 'center', width: '100%' }),
         _react2.default.createElement('br', null),
         _react2.default.createElement(
           'h2',
@@ -13383,6 +13398,7 @@ var websiteContent = _react2.default.createElement(
         _react2.default.createElement(
           'p',
           null,
+          _react2.default.createElement('img', { src: 'img/tuscany.jpg', className: 'right', width: '40%' }),
           'Over the last year we have found some pretty impressive flight deals to Europe.  We will keep you posted on what pops up from your city.  This means, no heavy lifting for you... unless your credit card weights a few pounds!'
         ),
         _react2.default.createElement('br', null),
@@ -13396,7 +13412,12 @@ var websiteContent = _react2.default.createElement(
   ),
   _react2.default.createElement(
     _TopicContainer2.default,
-    { id: 'rsvp', title: 'RSVP' },
+    { id: 'rsvp' },
+    _react2.default.createElement(
+      'h1',
+      { className: 'centered' },
+      'Let us Know!'
+    ),
     _react2.default.createElement(_RSVPForm2.default, null)
   )
 );
