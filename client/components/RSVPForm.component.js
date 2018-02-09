@@ -73,8 +73,8 @@ class RSVPForm extends React.Component {
                   {guestPlusOneInfo.attendance === true &&
                     <div>
                       <h2>Plus One Information</h2>
-                      {this.renderTextInput('name', 'Name:', guestPlusOneInfo)}
-                      {this.renderTextInput('name', 'Email:', guestPlusOneInfo)}
+                      {this.renderTextInput('plusOneName', 'Name:', guestPlusOneInfo)}
+                      {this.renderTextInput('plusOneEmail', 'Email:', guestPlusOneInfo)}
                       <br />
                     </div>
                   }
@@ -100,16 +100,6 @@ class RSVPForm extends React.Component {
      * the validation error otherwise.
      */
     validate() {
-        function validateGuestDetail(info) {
-            if (!info.meal)
-                return "Please let us know of your or your guest's meal preference";
-            if (!info.cocktailEvening)
-                return 'Please let us know whether you will be joining us for the cocktail evening on the day before the wedding';
-            if (!info.hangoverBrunch)
-                return 'Please let us know whether you will be joining us for the farewell brunch on the day after the wedding';
-
-            return null;
-        }
 
         const guestInfo = this.state.guestInfo;
 
@@ -122,26 +112,21 @@ class RSVPForm extends React.Component {
         if (guestInfo.attendance === 'no')
             return null;
 
+        if (!guestInfo.address)
+            return 'Please let us know a valid address where you recieve mail.';
+
         if (!guestInfo.email || guestInfo.email.trim().empty || !isEmail(guestInfo.email))
             return 'Please give us your valid email';
 
-        const guestValidation = validateGuestDetail(guestInfo);
-        if (guestValidation) {
-            return guestValidation;
-        }
-
         const guestPlusOneInfo = this.state.guestPlusOneInfo;
 
-        if (!guestPlusOneInfo.attendance)
-            return 'Please let us know whether you will be bringing a plus one';
 
-        if (guestPlusOneInfo.attendance === 'no')
-            return null;
-
-        if (!guestPlusOneInfo.name || guestPlusOneInfo.name.trim().empty)
+        if (guestPlusOneInfo.attendance === true) {
+          if (!guestPlusOneInfo.plusOneName || guestPlusOneInfo.plusOneName.trim().empty)
             return 'The plus one name field cannot be left empty';
-
-        return validateGuestDetail(guestPlusOneInfo);
+          if (!guestPlusOneInfo.plusOneEmail || guestPlusOneInfo.plusOneEmail.trim().empty || !isEmail(guestPlusOneInfo.plusOneEmail))
+              return 'Please give us a valid email for your plus one guest.';
+        }
     }
 
     /**

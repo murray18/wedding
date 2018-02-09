@@ -12726,8 +12726,8 @@ var RSVPForm = function (_React$Component) {
                             null,
                             'Plus One Information'
                         ),
-                        this.renderTextInput('name', 'Name:', guestPlusOneInfo),
-                        this.renderTextInput('name', 'Email:', guestPlusOneInfo),
+                        this.renderTextInput('plusOneName', 'Name:', guestPlusOneInfo),
+                        this.renderTextInput('plusOneEmail', 'Email:', guestPlusOneInfo),
                         _react2.default.createElement('br', null)
                     )
                 ),
@@ -12765,13 +12765,6 @@ var RSVPForm = function (_React$Component) {
     }, {
         key: 'validate',
         value: function validate() {
-            function validateGuestDetail(info) {
-                if (!info.meal) return "Please let us know of your or your guest's meal preference";
-                if (!info.cocktailEvening) return 'Please let us know whether you will be joining us for the cocktail evening on the day before the wedding';
-                if (!info.hangoverBrunch) return 'Please let us know whether you will be joining us for the farewell brunch on the day after the wedding';
-
-                return null;
-            }
 
             var guestInfo = this.state.guestInfo;
 
@@ -12781,22 +12774,16 @@ var RSVPForm = function (_React$Component) {
 
             if (guestInfo.attendance === 'no') return null;
 
-            if (!guestInfo.email || guestInfo.email.trim().empty || !(0, _isEmail2.default)(guestInfo.email)) return 'Please give us your valid email';
+            if (!guestInfo.address) return 'Please let us know a valid address where you recieve mail.';
 
-            var guestValidation = validateGuestDetail(guestInfo);
-            if (guestValidation) {
-                return guestValidation;
-            }
+            if (!guestInfo.email || guestInfo.email.trim().empty || !(0, _isEmail2.default)(guestInfo.email)) return 'Please give us your valid email';
 
             var guestPlusOneInfo = this.state.guestPlusOneInfo;
 
-            if (!guestPlusOneInfo.attendance) return 'Please let us know whether you will be bringing a plus one';
-
-            if (guestPlusOneInfo.attendance === 'no') return null;
-
-            if (!guestPlusOneInfo.name || guestPlusOneInfo.name.trim().empty) return 'The plus one name field cannot be left empty';
-
-            return validateGuestDetail(guestPlusOneInfo);
+            if (guestPlusOneInfo.attendance === true) {
+                if (!guestPlusOneInfo.plusOneName || guestPlusOneInfo.plusOneName.trim().empty) return 'The plus one name field cannot be left empty';
+                if (!guestPlusOneInfo.plusOneEmail || guestPlusOneInfo.plusOneEmail.trim().empty || !(0, _isEmail2.default)(guestPlusOneInfo.plusOneEmail)) return 'Please give us a valid email for your plus one guest.';
+            }
         }
 
         /**

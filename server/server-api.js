@@ -34,7 +34,9 @@ ServerAPI.all('/', function (req, res) {
 // The 'rsvp' command
 ServerAPI.post('/rsvp', function (req, res) {
     const requestId = uuidV1();
-    winston.log('debug', 'rsvp request', requestId, req.body);
+    winston.add(winston.transports.File, { filename: 'somefile.log' });
+    console.log('test console logger');
+    winston.log('info', 'rsvp request', requestId, req.body);
 
     var guestRSVPDocument = {
         rsvpId: requestId,
