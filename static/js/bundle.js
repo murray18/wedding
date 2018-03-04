@@ -12811,7 +12811,7 @@ var RSVPForm = function (_React$Component) {
                 ),
                 _react2.default.createElement('input', { type: 'text',
                     name: name,
-                    value: value,
+                    value: self.state[name],
                     onChange: onChange })
             );
         }
@@ -12875,7 +12875,7 @@ var RSVPForm = function (_React$Component) {
         key: 'renderCheckboxInput',
         value: function renderCheckboxInput(name, label, options, stateObj) {
             var self = this;
-            //const value = stateObj[name];
+            var value = stateObj[name];
 
             function onChange(event) {
                 var target = event.target;
@@ -12899,7 +12899,7 @@ var RSVPForm = function (_React$Component) {
                         { key: option.value },
                         _react2.default.createElement('input', { type: 'checkbox',
                             value: option.value,
-                            checked: stateObj[name],
+                            checked: value === true,
                             onChange: onChange }),
                         _react2.default.createElement(
                             'label',
@@ -12939,7 +12939,7 @@ var RSVPForm = function (_React$Component) {
 
             var guestInfo = Object.assign({}, state.guestInfo);
             var guestPlusOneInfo = Object.assign({}, state.guestPlusOneInfo);
-            console.log('guestPlusOneInfo', guestPlusOneInfo);
+
             var willAttend = guestInfo.attendance;
             delete guestInfo['attendance'];
 

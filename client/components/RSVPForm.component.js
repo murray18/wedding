@@ -146,7 +146,7 @@ class RSVPForm extends React.Component {
                 <label>{label}</label>
                 <input type="text"
                     name={name}
-                    value={value}
+                    value={self.state[name]}
                     onChange={onChange} />
             </div>
         );
@@ -199,7 +199,7 @@ class RSVPForm extends React.Component {
      */
     renderCheckboxInput(name, label, options, stateObj) {
         const self = this;
-        //const value = stateObj[name];
+        const value = stateObj[name];
 
         function onChange(event) {
           const target = event.target;
@@ -218,7 +218,7 @@ class RSVPForm extends React.Component {
                             <div key={option.value}>
                                 <input type="checkbox"
                                     value={option.value}
-                                    checked={stateObj[name]}
+                                    checked={value === true}
                                     onChange={onChange} />
                                 <label>{option.label}</label>
                             </div>
@@ -251,7 +251,7 @@ class RSVPForm extends React.Component {
 
         var guestInfo = Object.assign({}, state.guestInfo);
         var guestPlusOneInfo = Object.assign({}, state.guestPlusOneInfo);
-console.log('guestPlusOneInfo', guestPlusOneInfo);
+
         const willAttend = guestInfo.attendance;
         delete guestInfo['attendance'];
 
