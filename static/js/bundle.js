@@ -12939,12 +12939,11 @@ var RSVPForm = function (_React$Component) {
 
             var guestInfo = Object.assign({}, state.guestInfo);
             var guestPlusOneInfo = Object.assign({}, state.guestPlusOneInfo);
-
-            // TODO: This is a hack, find a way to properly construct the request
-            var willAttend = guestInfo.attendance === 'yes';
+            console.log('guestPlusOneInfo', guestPlusOneInfo);
+            var willAttend = guestInfo.attendance;
             delete guestInfo['attendance'];
 
-            if (guestPlusOneInfo.attendance === 'yes') {
+            if (guestPlusOneInfo.attendance === true) {
                 delete guestPlusOneInfo['attendance'];
             } else {
                 guestPlusOneInfo = undefined;

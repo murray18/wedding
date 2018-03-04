@@ -251,12 +251,11 @@ class RSVPForm extends React.Component {
 
         var guestInfo = Object.assign({}, state.guestInfo);
         var guestPlusOneInfo = Object.assign({}, state.guestPlusOneInfo);
-
-        // TODO: This is a hack, find a way to properly construct the request
-        const willAttend = guestInfo.attendance === 'yes';
+console.log('guestPlusOneInfo', guestPlusOneInfo);
+        const willAttend = guestInfo.attendance;
         delete guestInfo['attendance'];
 
-        if (guestPlusOneInfo.attendance === 'yes') {
+        if (guestPlusOneInfo.attendance === true) {
             delete guestPlusOneInfo['attendance'];
         }
         else {

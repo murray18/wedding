@@ -34,9 +34,9 @@ ServerAPI.all('/', function (req, res) {
 // The 'rsvp' command
 ServerAPI.post('/rsvp', function (req, res) {
     const requestId = uuidV1();
-    winston.add(winston.transports.File, { filename: 'somefile.log' });
-    console.log('test console logger');
-    winston.log('info', 'rsvp request', requestId, req.body);
+    //winston.add(winston.transports.File, { filename: 'somefile.log' });
+    //console.log('test console logger');
+    winston.log('debug', 'rsvp request', requestId, req.body);
 
     var guestRSVPDocument = {
         rsvpId: requestId,
@@ -45,7 +45,9 @@ ServerAPI.post('/rsvp', function (req, res) {
     };
 
     if (req.body.guestPlusOne) {
-        guestRSVPDocument.guestPlusOne = req.body.guestPlusOne;
+        guestRSVPDocument.guestPlusOne = {};
+        guestRSVPDocument.guestPlusOne.name = req.body.guestPlusOne.plusOneName;
+        guestRSVPDocument.guestPlusOne.email = req.body.guestPlusOne.plusOneEmail;
     }
 
     new RSVP(guestRSVPDocument).save(function (err) {
