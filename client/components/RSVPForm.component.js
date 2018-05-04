@@ -227,7 +227,7 @@ class RSVPForm extends React.Component {
                             </div>
                         );
                     })
-                }
+                } 
             </div>
         );
     }
