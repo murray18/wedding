@@ -36,12 +36,12 @@ class RSVPForm extends React.Component {
 
         return (
             <div id={this.props.id} className="wizard-form">
-                <p>Please complete the form below before <font color="red">MARCH 1ST</font> to let us know if you will be joining us in Italy. We know it is early and it is ok to be "not sure."  Everyone is welcome at the Celebracation, we just may not have room for you at the Villa if you decide later.</p>
+                <p>Please complete the form below before <font color="red">MAY 18th</font> to let us know if you will be joining us in Italy. We know it is early and it is ok to be "not sure."  Everyone is welcome at the Celebracation, we just may not have room for you at the estate if you decide later.</p>
+                <p>Your RSVP is to help us get numbers so we can start planning too!</p>
                 <br />
 
                 <h2>Your Information</h2>
-                {this.renderTextInput('name', 'Name:', guestInfo)}
-                {this.renderTextInput('additionalGuests', 'Additional guests that will be joining us: ', guestInfo)}
+                {this.renderTextInput('name', 'Who is RSVPing: inlcude yourself, your spouse/partner and children', guestInfo)}
                 {this.renderTextInput('email', 'Email:', guestInfo)}
                 {this.renderTextInput('address', 'Address, State, Zip, Country:', guestInfo)}
                 <br />

@@ -8,7 +8,6 @@ import mongoose from 'mongoose';
 
 const GuestSchema = new mongoose.Schema({
     name: { type: String, required: true },
-    additionalGuests: String,
     email: String,
     address: String
 });

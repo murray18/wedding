@@ -12697,9 +12697,14 @@ var RSVPForm = function (_React$Component) {
                     _react2.default.createElement(
                         'font',
                         { color: 'red' },
-                        'MARCH 1ST'
+                        'MAY 18th'
                     ),
-                    ' to let us know if you will be joining us in Italy. We know it is early and it is ok to be "not sure."  Everyone is welcome at the Celebracation, we just may not have room for you at the Villa if you decide later.'
+                    ' to let us know if you will be joining us in Italy. We know it is early and it is ok to be "not sure."  Everyone is welcome at the Celebracation, we just may not have room for you at the estate if you decide later.'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'Your RSVP is to help us get numbers so we can start planning too!'
                 ),
                 _react2.default.createElement('br', null),
                 _react2.default.createElement(
@@ -12707,8 +12712,7 @@ var RSVPForm = function (_React$Component) {
                     null,
                     'Your Information'
                 ),
-                this.renderTextInput('name', 'Name:', guestInfo),
-                this.renderTextInput('additionalGuests', 'Additional guests that will be joining us: ', guestInfo),
+                this.renderTextInput('name', 'Who is RSVPing: inlcude yourself, your spouse/partner and children', guestInfo),
                 this.renderTextInput('email', 'Email:', guestInfo),
                 this.renderTextInput('address', 'Address, State, Zip, Country:', guestInfo),
                 _react2.default.createElement('br', null),
@@ -13332,7 +13336,7 @@ var websiteContent = _react2.default.createElement(
         _react2.default.createElement(
           'p',
           null,
-          'Instead of getting married at the courthourse and taking you all with us on our honeymoon, we thought the next best thing would be to invite everyone to celebrate with us in Italy! We know that it is a far off destination, but are hoping that by giving you a WHOLE YEAR to get it together, you will be able to make it!  '
+          'Instead of getting married at the courthourse and taking you all with us on our honeymoon, we thought the next best thing would be to invite everyone to celebrate with us in Italy! We know that it is a far off destination but are hoping that by giving you a WHOLE YEAR to get it together, you will be able to make it!'
         ),
         _react2.default.createElement('br', null),
         _react2.default.createElement(
@@ -13361,7 +13365,7 @@ var websiteContent = _react2.default.createElement(
         _react2.default.createElement(
           'p',
           null,
-          'We will be holding rooms/apartments in a Tuscan Villa.  Not only do we want to force all of our amazing friends and family to stay on the same property, but this will bring down your accommodation costs!  We are hoping to keep you all there for at least 5 days so we can spend time with everyone who means so much to us.  Our rough estimate for accommodations is around $200 a person for the entire Villa stay.'
+          'We will be holding rooms/apartments at Fattoria del Colle, a 16th century Tuscan hamlet. Not only do we want to force all of our amazing friends and family to stay on the same property, but this will bring down your accommodation costs! We are hoping to keep you all there for at least 5 days so we can spend time with everyone who means so much to us. Our rough estimate for accommodations is around $200 a person for the entire stay.  Each apartment will have a kitchen so you can eat meals in if you choose.'
         ),
         _react2.default.createElement('br', null),
         _react2.default.createElement(
