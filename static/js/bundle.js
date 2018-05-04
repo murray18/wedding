@@ -12708,29 +12708,12 @@ var RSVPForm = function (_React$Component) {
                     'Your Information'
                 ),
                 this.renderTextInput('name', 'Name:', guestInfo),
+                this.renderTextInput('additionalGuests', 'Additional guests that will be joining us: ', guestInfo),
                 this.renderTextInput('email', 'Email:', guestInfo),
                 this.renderTextInput('address', 'Address, State, Zip, Country:', guestInfo),
                 _react2.default.createElement('br', null),
-                this.renderRadioInput('attendance', 'Attendance*:', [{ label: 'Yes, I will definitely be there and would love to stay in the villa.', value: 'yes' }, { label: 'Yes, I will be at the celebration, but will find my own accomodations.', value: 'yesnovilla' }, { label: 'Not sure.  It is too soon to decide but I will be considering it.', value: 'maybe' }, { label: 'No way José!  Destination weddings are sooo 2018.', value: 'no' }], guestInfo),
+                this.renderRadioInput('attendance', 'Attendance*:', [{ label: 'Yes, I will definitely be there and would love to stay in the villa.', value: 'yes' }, { label: 'Not sure.  It is too soon to decide but I will be considering it.', value: 'maybe' }, { label: 'No way José!  Destination weddings are sooo 2018.', value: 'no' }], guestInfo),
                 _react2.default.createElement('br', null),
-                (guestInfo.attendance === 'yes' || guestInfo.attendance === 'yesnovilla') && _react2.default.createElement(
-                    'div',
-                    null,
-                    this.renderCheckboxInput('attendance', '', [{ label: ' Add a plus one', value: 'yes' }], guestPlusOneInfo),
-                    _react2.default.createElement('br', null),
-                    guestPlusOneInfo.attendance === true && _react2.default.createElement(
-                        'div',
-                        null,
-                        _react2.default.createElement(
-                            'h2',
-                            null,
-                            'Plus One Information'
-                        ),
-                        this.renderTextInput('plusOneName', 'Name:', guestPlusOneInfo),
-                        this.renderTextInput('plusOneEmail', 'Email:', guestPlusOneInfo),
-                        _react2.default.createElement('br', null)
-                    )
-                ),
                 this.state.submitStatus && _react2.default.createElement(
                     'div',
                     { className: this.state.submitStatus.isError ? 'alert-error' : 'alert-success' },

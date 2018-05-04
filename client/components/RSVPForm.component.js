@@ -41,6 +41,7 @@ class RSVPForm extends React.Component {
 
                 <h2>Your Information</h2>
                 {this.renderTextInput('name', 'Name:', guestInfo)}
+                {this.renderTextInput('additionalGuests', 'Additional guests that will be joining us: ', guestInfo)}
                 {this.renderTextInput('email', 'Email:', guestInfo)}
                 {this.renderTextInput('address', 'Address, State, Zip, Country:', guestInfo)}
                 <br />
@@ -49,7 +50,6 @@ class RSVPForm extends React.Component {
                   'Attendance*:',
                   [
                     { label: 'Yes, I will definitely be there and would love to stay in the villa.', value: 'yes' },
-                    { label: 'Yes, I will be at the celebration, but will find my own accomodations.', value: 'yesnovilla' },
                     { label: 'Not sure.  It is too soon to decide but I will be considering it.', value: 'maybe' },
                     { label: 'No way José!  Destination weddings are sooo 2018.', value: 'no' }
                   ],
@@ -57,7 +57,10 @@ class RSVPForm extends React.Component {
                 }
                 <br />
 
-                {(guestInfo.attendance === 'yes' || guestInfo.attendance === 'yesnovilla') &&
+                {/*
+                  We removed the guest plus one
+
+                  {(guestInfo.attendance === 'yes' || guestInfo.attendance === 'yesnovilla') &&
                   <div>
                   {this.renderCheckboxInput(
                     'attendance',
@@ -79,7 +82,7 @@ class RSVPForm extends React.Component {
                     </div>
                   }
                 </div>
-              }
+              } */}
                 {this.state.submitStatus &&
                     <div className={this.state.submitStatus.isError ? 'alert-error' : 'alert-success'}>
                         <span className="alert-closebtn"
