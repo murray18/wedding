@@ -16,6 +16,18 @@ import TopicContainer from './components/TopicContainer.component';
 
 const websiteContent = (
   <div>
+    <Sticky enabled={true}>
+      <Menu id="menu"
+        items={[{ label: 'CELEBRACATION', href: 'brideandgroom' },
+                { label: 'RSVP', href: 'rsvp' },
+                { label: 'ACCOMODATIONS', href: 'logistics' },
+                { label: 'THINGS TO DO', href: 'thingstodo' },
+                { label: 'GIFTS', href: 'gifts' }]}>
+      </Menu>
+    </Sticky>
+          <p style={{textAlign: "center"}}>
+            <a href="https://goo.gl/maps/7oeGdedkbM72">Google Maps</a> | <a href="img/city-hvar-map.jpg">Tourist Map</a>
+          </p>
     <TopicContainer id="brideandgroom" name="celebracation">
       <div className="container">
         <div className="row">

@@ -1,0 +1,8 @@
+{"guest":{"name":"test","email":"test@test.com","address":"test"},"willAttend":false,"level":"info","message":"rsvp request 9a7e0fa0-0db3-11e8-ba68-e1e2c2a39b9a","timestamp":"2018-02-09T16:09:27.712Z"}
+{"requestId":"9a7e0fa0-0db3-11e8-ba68-e1e2c2a39b9a","level":"debug","message":"rsvp response 9a7e0fa0-0db3-11e8-ba68-e1e2c2a39b9a","timestamp":"2018-02-09T16:09:27.739Z"}
+{"guest":{"name":"test","email":"test@test.com","address":"test"},"willAttend":false,"level":"info","message":"rsvp request b0435b20-1feb-11e8-a00d-ff448e017343","timestamp":"2018-03-04T20:36:16.984Z"}
+{"requestId":"b0435b20-1feb-11e8-a00d-ff448e017343","level":"debug","message":"rsvp response b0435b20-1feb-11e8-a00d-ff448e017343","timestamp":"2018-03-04T20:36:17.007Z"}
+{"guest":{"name":"hahaha","email":"ha@ha.com","address":"haha"},"willAttend":false,"level":"info","message":"rsvp request 5da1d530-1fec-11e8-8dfc-59835424ca9f","timestamp":"2018-03-04T20:41:07.848Z"}
+{"requestId":"5da1d530-1fec-11e8-8dfc-59835424ca9f","level":"debug","message":"rsvp response 5da1d530-1fec-11e8-8dfc-59835424ca9f","timestamp":"2018-03-04T20:41:07.908Z"}
+{"guest":{"name":"d","email":"d@d.com","address":"x"},"willAttend":false,"level":"debug","message":"rsvp request b38f3fe0-1fed-11e8-9bd8-417049632ee8","timestamp":"2018-03-04T20:50:41.507Z"}
+{"requestId":"b38f3fe0-1fed-11e8-9bd8-417049632ee8","level":"debug","message":"rsvp response b38f3fe0-1fed-11e8-9bd8-417049632ee8","timestamp":"2018-03-04T20:50:41.533Z"}
