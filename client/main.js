@@ -26,6 +26,7 @@ const websiteContent = (
                 { label: 'REGISTRY', href: 'gifts' }]}>
       </Menu>
     </Sticky>
+    <br />
     <TopicContainer id="brideandgroom" name="celebracation">
       <div className="container">
         <div className="row">
@@ -39,7 +40,7 @@ const websiteContent = (
     <TopicContainer id="none">
       <div className="row">
         <div className="one-half column">
-          <img className="centered" width="60%" src="img/discShot.png"></img>
+          <img className="centered" width="60%" src="img/kisses.jpg"></img>
         </div>
         <div className="one-half column">
           <img className="centered" width="60%" src="img/discShot.png"></img>
@@ -59,7 +60,7 @@ const websiteContent = (
         <div className="row">
           <p className='centered'>Fate Brewing Company</p>
           <p className='centered'>1600 38th Street, Boulder CO 80301</p>
-          <p className='centered'><a href="http://www.fatebrewingcompany.com/">www.fatebrewingcompany.com/</a></p>
+          <p className='centered'><a href="http://www.fatebrewingcompany.com/">www.fatebrewingcompany.com</a></p>
           <p className='centered'><img src="https://cdn.craftbeer.com/wp-content/uploads/2016/02/18154804/fate_open.jpg"></img></p>
         </div>
       </div>
