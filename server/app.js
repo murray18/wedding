@@ -64,7 +64,7 @@ async.waterfall([
                     });
                 }
 
-                next('route'); 
+                next('route');
             });
 
         callback(null);

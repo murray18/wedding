@@ -20,9 +20,9 @@ npm install && npm start
 
 ## COLOPHON
 
-Implemented on Mac using [Microsoft Visual Studio Code](https://code.visualstudio.com/).
+Based on a site by Kaloian Manassiev
 
-Site template idea borrowed from http://sarahlovesbradley.com/.
+Built by Neil Cousineau using Atom
 
 ## LICENSE
 
