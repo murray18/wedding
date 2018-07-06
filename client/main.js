@@ -38,16 +38,14 @@ const websiteContent = (
     </TopicContainer>
 
     <TopicContainer id="none">
-      <div className="row">
-        <div className="one-half column">
-          <img className="centered" width="60%" src="img/kisses.jpg"></img>
-          <p>I enjoy long walks on the beach!</p>
-        </div>
-        <div className="one-half column">
-          <img className="centered" width="60%" src="img/discShot.png"></img>
-          <p>I enjoy long walks on the beach</p>
-        </div>
-      </div>
+      <img className="aboutphoto" src="img/discShot.png"></img>
+      <p>Neil and Becca met at the launch of the Falcon 9.  Well, it wasn't actually at the launch site, but it was at a brewery known as Upslope.
+      The fire between the two was so strong it was almost like a rocket had actually taken off.  The next date, he cooked for her.  He thought for sure
+    that would be the last time they saw each other, but the next week she invited him to play disc golf.  He has since become a semi-pro (but he doesn't want to brag....)
+  Anyway, they dated for a while. They moved in together mixing their dog and cats.  They started a garden together.  They traveled together.  And on a flight to Europe, he didn't even make it
+out of the United States airspace before proposing.  She was thankful that he didn't make a public spectacle of the occasion by announcing it over the intercom. After a push from their friends and family, they have chosen to
+not elope and instead celebrate with everyone in their hometown.  They hope you all can be there to witness this once-in-a-lifetime event.
+</p>
     </TopicContainer>
 
     <TopicContainer id="rsvp">
@@ -63,7 +61,7 @@ const websiteContent = (
           <p>Fate Brewing Company</p>
           <p><a href="http://www.fatebrewingcompany.com/">www.fatebrewingcompany.com</a></p>
           <p>1600 38th Street, Boulder CO 80301</p>
-          <p><img src="https://cdn.craftbeer.com/wp-content/uploads/2016/02/18154804/fate_open.jpg"></img></p>
+          <p><img width="70%" src="https://cdn.craftbeer.com/wp-content/uploads/2016/02/18154804/fate_open.jpg"></img></p>
         </div>
       </div>
     </TopicContainer>
@@ -88,17 +86,20 @@ const websiteContent = (
 
     <TopicContainer id="thingstodo">
       <h1>Things To Do</h1>
-      <h2>In & Around Boulder</h2>
+      <h2>The Day After</h2>
       <div className="container">
         <div className="row">
+          <p className='left'>We will be heading to the Royal Gorge for a phenomenol train ride.  More details coming soon!</p>
+          <br></br>
+          <br></br>
+          <h2>In & Around Boulder</h2>
           <p className='left'>Breweries: Avery, Boulder Beer, Upslope (where we had our first date!) and Twisted Pine are some of our favorites and offer brewery tours. </p>
-            <img className="centered" height="35%" src="https://img.grouponcdn.com/iam/3YQu9k7tN6JKPFpnVHN3DzTzVsDx/3Y-2048x1229/v1/c700x420.jpg"></img>
           <p className='left'>Hiking: Chautauqua Park (home of the iconic Flatirons), Mount Sanitas, Eldorado Springs</p>
-            <img className="centered" height="35%" src="https://43mbhp3aft5g3uc0tuhsk4a8-wpengine.netdna-ssl.com/wp-content/uploads/2010/08/red-rocks-trading-post-trail-00-header1-831x560.jpg"></img>
-          <br/>
-          <br/>
+          <p className='left'>Other Cool Things: Valmont Disc Golf, Dushanbe Teahouse, Pearl Street Mall</p>
+          <br></br>
+          <br></br>
           <h2>Beyond Boulder</h2>
-          <p className='left'>Rocky Mountain National Park, Denver Art Museum</p>
+          <p className='left'>Rocky Mountain National Park, Denver Art Museum, Fall Colors (Aspen, Peak to Peak Highway)</p>
         </div>
       </div>
     </TopicContainer>
@@ -108,7 +109,7 @@ const websiteContent = (
       <div className="container">
         <div className="row">
           <p>We would love to receive something handmade from you! <br/>If you aren't feeling creative, you can also check out our registry by clicking on the image below.<br/><br/>
-          <a href="https://www.zola.com/registry/neilandbecca"><img src="https://d1tntvpcrzvon2.cloudfront.net/vzassets/1.2.78/images/registryShare/zola-logo-white.jpg"></img></a>
+          <a href="https://www.zola.com/registry/neilandbecca"><img width="30%" src="https://d1tntvpcrzvon2.cloudfront.net/vzassets/1.2.78/images/registryShare/zola-logo-white.jpg"></img></a>
         </p>
 
         </div>

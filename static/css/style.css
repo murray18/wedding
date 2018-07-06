@@ -16,6 +16,16 @@ p, h2, h3, h1 {
   text-align: center;
 }
 
+.aboutphoto {
+  float: left;
+  width: 35%;
+  shape-outside:
+  url(../img/discShot.png);
+  shape-margin: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
 img.centered {
   display:block;
   width: 50%;
@@ -229,10 +239,10 @@ hr {
     border: none;
     box-sizing: border-box;
     font-family: inherit;
-    font-size: inherit;
+    font-size: 22px;
     margin: 8px 0;
     padding: 12px 20px;
-    text-align: center;
+    text-align: left;
     width: 100%;
 }
 
