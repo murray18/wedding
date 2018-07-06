@@ -4,9 +4,14 @@
  * Common elements
  */
 
-.centered h2, .centered p {
+p, h2, h3, h1 {
   text-align: center;
 }
+
+.left-align {
+  text-align: left;
+}
+
 .centered {
   text-align: center;
 }
@@ -498,7 +503,7 @@ img.location-image {
 /* Phablet */
 @media (max-width: 600px) {
     body {
-      background-image: url('../img/bgimage_wine.jpg');
+      background-image: : url('http://csumarketingassociation.com/wp-content/uploads/2018/04/Boulder-Flatirons-@roblantzphoto-Instagram-OutThere-Colorado-1024x683-min-1024x683-826x470.jpg');
         background-size:200%;
     }
 
