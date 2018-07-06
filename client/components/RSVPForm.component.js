@@ -36,12 +36,11 @@ class RSVPForm extends React.Component {
 
         return (
             <div id={this.props.id} className="wizard-form">
-                <p>Please complete the form below before <font color="red">MAY 18th</font> to let us know if you will be joining us in Italy. We know it is early and it is ok to be "not sure."  Everyone is welcome at the Celebracation, we just may not have room for you at the estate if you decide later.</p>
-                <p>Your RSVP is to help us get numbers so we can start planning too!</p>
+                <p>Please complete the form below to let us know if you will be joining us for our celebration. We know it may seem last minute, but would you excpet anything less from us?!</p>
                 <br />
 
                 <h2>Your Information</h2>
-                {this.renderTextInput('name', 'Who is RSVPing: inlcude yourself, your spouse/partner and children', guestInfo)}
+                {this.renderTextInput('name', 'Name(s) on Your Invite', guestInfo)}
                 {this.renderTextInput('email', 'Email:', guestInfo)}
                 {this.renderTextInput('address', 'Address, State, Zip, Country:', guestInfo)}
                 <br />
@@ -49,40 +48,22 @@ class RSVPForm extends React.Component {
                   'attendance',
                   'Attendance*:',
                   [
-                    { label: 'Yes, I will definitely be there and would love to stay in the villa.', value: 'yes' },
-                    { label: 'Not sure.  It is too soon to decide but I will be considering it.', value: 'maybe' },
-                    { label: 'No way José!  Destination weddings are sooo 2018.', value: 'no' }
+                    { label: 'Yes, we will see you there!', value: 'yes' },
+                    { label: 'No, give me more notice next time!', value: 'no' }
                   ],
                   guestInfo)
                 }
                 <br />
-
-                {/*
-                  We removed the guest plus one
-
-                  {(guestInfo.attendance === 'yes' || guestInfo.attendance === 'yesnovilla') &&
-                  <div>
-                  {this.renderCheckboxInput(
-                    'attendance',
-                    '',
-                    [
-                      { label: ' Add a plus one', value: 'yes' },
-                    ],
-                    guestPlusOneInfo)
-                  }
-
-                  <br />
-
-                  {guestPlusOneInfo.attendance === true &&
-                    <div>
-                      <h2>Plus One Information</h2>
-                      {this.renderTextInput('plusOneName', 'Name:', guestPlusOneInfo)}
-                      {this.renderTextInput('plusOneEmail', 'Email:', guestPlusOneInfo)}
-                      <br />
-                    </div>
-                  }
+                {(guestInfo.attendance === 'yes') &&
+                <div>
+                  <p><i>Hooray! We can't wait to spend time with you!</i></p>
                 </div>
-              } */}
+                }
+                {(guestInfo.attendance === 'no') &&
+                <div>
+                  <p><i>Sorry you can't make it! No worries. There will always be our 2038 vow renewal ceremony in Antartica!</i></p>
+                </div>
+                }
                 {this.state.submitStatus &&
                     <div className={this.state.submitStatus.isError ? 'alert-error' : 'alert-success'}>
                         <span className="alert-closebtn"
@@ -227,7 +208,7 @@ class RSVPForm extends React.Component {
                             </div>
                         );
                     })
-                } 
+                }
             </div>
         );
     }

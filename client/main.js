@@ -18,42 +18,98 @@ const websiteContent = (
   <div>
     <Sticky enabled={true}>
       <Menu id="menu"
-        items={[{ label: 'CELEBRACATION', href: 'brideandgroom' },
+        items={[{ label: 'CELEBRATION', href: 'brideandgroom' },
                 { label: 'RSVP', href: 'rsvp' },
-                { label: 'ACCOMODATIONS', href: 'logistics' },
+                { label: 'THE VENUE', href: 'venue' },
+                { label: 'TRAVEL', href: 'logistics' },
                 { label: 'THINGS TO DO', href: 'thingstodo' },
-                { label: 'GIFTS', href: 'gifts' }]}>
+                { label: 'REGISTRY', href: 'gifts' }]}>
       </Menu>
     </Sticky>
-          <p style={{textAlign: "center"}}>
-            <a href="https://goo.gl/maps/7oeGdedkbM72">Google Maps</a> | <a href="img/city-hvar-map.jpg">Tourist Map</a>
-          </p>
     <TopicContainer id="brideandgroom" name="celebracation">
       <div className="container">
         <div className="row">
           <h1 className='centered'>Neil & Becca</h1>
-          <img src="img/definition.gif" className="centered"></img>
-          <p>Instead of getting married at the courthourse and taking you all with us on our honeymoon, we thought the next best thing would be to invite everyone to celebrate with us in Italy! We know that it is a far off destination but are hoping that by giving you a WHOLE YEAR to get it together, you will be able to make it!</p>
-          <br />
-          <p>WHAT: The Celebracation!</p>
-          <p>WHEN: May 23-28ish, 2019</p>
-          <p>WHERE: Tuscany, Italy</p>
-          <br />
-          <img src="img/florence.jpg" className="center" width="100%"></img>
-          <br />
-          <h2>Things to think about (ie. pursuade you)</h2>
-          <p>We will be holding rooms/apartments at Fattoria del Colle, a 16th century Tuscan hamlet. Not only do we want to force all of our amazing friends and family to stay on the same property, but this will bring down your accommodation costs! We are hoping to keep you all there for at least 5 days so we can spend time with everyone who means so much to us. Our rough estimate for accommodations is around $200 a person for the entire stay.  Each apartment will have a kitchen so you can eat meals in if you choose.</p>
-          <br />
-          <p><img src="img/tuscany.jpg" className="right" width="40%"></img>Over the last year we have found some pretty impressive flight deals to Europe.  We will keep you posted on what pops up from your city.  This means, no heavy lifting for you... unless your credit card weights a few pounds!</p>
-          <br />
-          <p>Keep in mind, this isn't just about our undying love for each other and proving that to you!  We are encouraging everyone to take a real vacation and get out to explore Sienna, Florence, Rome and the surrounding areas (maybe even other parts of Europe?).  We can't wait for you to share some time with us, BUT what we would enjoy even more is to hear about your adventures before the Celebra-cation and/or learn about where you will be traveling to after.  We are giving you the perfect excuse to take those vacation days so you don't just have to hear about our travel stories, you can be a part of them!</p>
+          <h2 className='centered'>September 29th, 2018</h2>
+          <h2 className='centered'>Boulder, Colorado</h2>
         </div>
       </div>
     </TopicContainer>
+
+    <TopicContainer id="none">
+      <div className="row">
+        <div className="one-half column">
+          <img className="centered" width="60%" src="img/discShot.png"></img>
+        </div>
+        <div className="one-half column">
+          <img className="centered" width="60%" src="img/discShot.png"></img>
+        </div>
+      </div>
+    </TopicContainer>
+
     <TopicContainer id="rsvp">
       <h1 className='centered'>Let us Know!</h1>
       <RSVPForm>
       </RSVPForm>
+    </TopicContainer>
+
+    <TopicContainer id="venue">
+      <h1 className='centered'>The Venue</h1>
+      <div className="container">
+        <div className="row">
+          <p className='centered'>Fate Brewing Company</p>
+          <p className='centered'>1600 38th Street, Boulder CO 80301</p>
+          <p className='centered'><a href="http://www.fatebrewingcompany.com/">www.fatebrewingcompany.com/</a></p>
+          <p className='centered'><img src="https://cdn.craftbeer.com/wp-content/uploads/2016/02/18154804/fate_open.jpg"></img></p>
+        </div>
+      </div>
+    </TopicContainer>
+
+    <TopicContainer id="logistics">
+      <h1 className='centered'>Travel</h1>
+      <div className="container">
+        <div className="row">
+          <p className='centered'>There are several great hotels located close to Fate Brewing and downtown Boulder.</p>
+          <p className='centered'><a href="https://www.marriott.com/hotels/travel/denbd-courtyard-boulder/">Courtyard by Marriott Boulder</a> - 4710 Pearl E Cir, Boulder, CO 80301</p>
+          <p className='centered'><a href="https://boulderpearlstreet.place.hyatt.com/en/hotel/home.html">Hyatt Place Boulder/Pearl Street</a> - 2280 Junction Pl, Boulder, CO 80301</p>
+          <p className='centered'><a href="https://www.millenniumhotels.com/en/boulder/">Millenium Harvest House</a> - 1345 28th St, Boulder, CO 80302</p>
+          <p className='centered'><a href="http://hiltongardeninn3.hilton.com/en/hotels/colorado/hilton-garden-inn-boulder-WBUBOGI/index.html">Hilton Garden Inn Boulder</a> - 2701 Canyon Blvd, Boulder, CO 80302</p>
+          <p className='centered'>We travel using <a href="http://www.airbnb.com">Airbnb</a> all the time and there are some great options in Boulder!</p>
+          <br/>
+          <p className='centered'>Check out <a href="https://www.google.com/flights">flights.google.com</a> to get some ideas on good flight options.</p>
+          <br/>
+          <p className='centered'>You will most likely need a car if you plan to explore more of the area.  There are buses that run from the Denver Airport to Boulder and around the city of Boulder. Lyft, Uber and Ztrip as also available in the city.  </p>
+        </div>
+      </div>
+    </TopicContainer>
+
+    <TopicContainer id="thingstodo">
+      <h1 className='centered'>Things To Do</h1>
+      <h2 className='centered'>In & Around Boulder</h2>
+      <div className="container">
+        <div className="row">
+          <p className='left'>Breweries: Avery, Boulder Beer, Upslope (where we had our first date!) and Twisted Pine are some of our favorites and offer brewery tours. </p>
+          <p className='left'>Hiking: Chautauqua Park (home of the iconic Flatirons), Mount Sanitas, Eldorado Springs</p>
+          <p className='centered'><img height="35%" src="https://img.grouponcdn.com/iam/3YQu9k7tN6JKPFpnVHN3DzTzVsDx/3Y-2048x1229/v1/c700x420.jpg"></img>
+        <img height="35%" src="https://43mbhp3aft5g3uc0tuhsk4a8-wpengine.netdna-ssl.com/wp-content/uploads/2010/08/red-rocks-trading-post-trail-00-header1-831x560.jpg"></img></p>
+          <br/>
+          <br/>
+          <h2 className='centered'>Beyond Boulder</h2>
+          <p className='left'>Rocky Mountain National Park, Denver Art Museum</p>
+        </div>
+      </div>
+    </TopicContainer>
+
+    <TopicContainer id="gifts">
+      <h1 className='centered'>Registry</h1>
+      <div className="container">
+        <div className="row">
+          <p className='centered'>We would love to receive something handmade from you! <br/>If you aren't feeling creative, you can also check out our registry by clicking on the image below.<br/><br/>
+          <a href="https://www.zola.com/registry/neilandbecca"><img border="0" src="https://d1tntvpcrzvon2.cloudfront.net/vzassets/1.2.78/images/registryShare/zola-logo-white.jpg"></img></a>
+        </p>
+
+        </div>
+      </div>
     </TopicContainer>
   </div>
 );
