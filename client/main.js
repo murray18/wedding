@@ -61,7 +61,7 @@ not elope and instead celebrate with everyone in their hometown.  They hope you 
           <p>Fate Brewing Company</p>
           <p><a href="http://www.fatebrewingcompany.com/">www.fatebrewingcompany.com</a></p>
           <p>1600 38th Street, Boulder CO 80301</p>
-          <p><img width="70%" src="https://cdn.craftbeer.com/wp-content/uploads/2016/02/18154804/fate_open.jpg"></img></p>
+          <p><img width="70%" src="img/fate_open.jpg"></img></p>
         </div>
       </div>
     </TopicContainer>
