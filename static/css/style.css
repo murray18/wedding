@@ -514,7 +514,7 @@ img.location-image {
 @media (max-width: 600px) {
     body {
       background-image: : url('bgimg_small.jpg');
-        background-size:200%;
+        background-size:400%;
     }
 
     h1 {
