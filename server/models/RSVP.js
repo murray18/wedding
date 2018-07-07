@@ -9,7 +9,8 @@ import mongoose from 'mongoose';
 const GuestSchema = new mongoose.Schema({
     name: { type: String, required: true },
     email: String,
-    address: String
+    address: String,
+    comment: String
 });
 
 const RSVPSchema = new mongoose.Schema({

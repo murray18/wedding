@@ -44,6 +44,7 @@ class RSVPForm extends React.Component {
                 {this.renderTextInput('email', 'Email:', guestInfo)}
                 {this.renderTextInput('address', 'Address, State, Zip, Country:', guestInfo)}
                 <br />
+                {this.renderTextInput('comment', 'Let us know about any plus ones, amazing things to say or song requests!', guestInfo)}
                 {this.renderRadioInput(
                   'attendance',
                   'Attendance*:',
@@ -64,6 +65,7 @@ class RSVPForm extends React.Component {
                   <p><i>Sorry you can't make it! No worries. There will always be our 2038 vow renewal ceremony in Antartica!</i></p>
                 </div>
                 }
+                <br />
                 {this.state.submitStatus &&
                     <div className={this.state.submitStatus.isError ? 'alert-error' : 'alert-success'}>
                         <span className="alert-closebtn"
