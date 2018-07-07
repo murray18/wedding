@@ -40,7 +40,7 @@ const websiteContent = (
     <TopicContainer id="none">
       <img className="aboutphoto" src="img/discShot.png"></img>
       <p>Neil and Becca met at the launch of the Falcon 9.  Well, it wasn't actually at the launch site, but it was at a brewery known as Upslope.
-      The fire between the two was so strong it was almost like a rocket had actually taken off.  The next date, he cooked for her.  He thought for sure
+      The fire between the two was so strong it was almost like a rocket had actually taken off.  The next date he cooked for her.  He thought for sure
     that would be the last time they saw each other but the next week she invited him to play disc golf.  He has since become a semi-pro (but he doesn't want to brag....)
   Anyway, they dated for a while. They moved in together mixing their dog and cats.  They started a garden together.  They traveled together.  And on a flight to Europe, he didn't even make it
 out of the United States airspace before proposing.  She was thankful that he didn't make a public spectacle of the occasion by announcing it over the intercom. After a push from their friends and family, they have chosen to

@@ -40,7 +40,7 @@ class RSVPForm extends React.Component {
                 <br />
 
                 <h2>Your Information</h2>
-                {this.renderTextInput('name', 'Name(s) on Your Invite', guestInfo)}
+                {this.renderTextInput('name', 'Name(s)', guestInfo)}
                 {this.renderTextInput('email', 'Email:', guestInfo)}
                 {this.renderTextInput('address', 'Address, State, Zip, Country:', guestInfo)}
                 <br />
