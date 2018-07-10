@@ -31,7 +31,7 @@ const websiteContent = (
       <div className="container">
         <div className="row">
           <h1>Neil & Becca</h1>
-          <h2>September 29th, 2018</h2>
+          <h2>September 29th, 2018 - 6:00pm</h2>
           <h2>Boulder, Colorado</h2>
         </div>
       </div>
