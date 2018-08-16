@@ -49,13 +49,16 @@ not elope and instead celebrate with everyone in their hometown.  They hope you 
     </TopicContainer>
 
     <TopicContainer id="rsvp">
-      <h1>Let us Know!</h1>
-      <RSVPForm>
-      </RSVPForm>
+      <p>The RSVP section is closed since we have to let the venue know the number of people who will be joining us in advance.  If you did not RSVP by August 15th, please contact us by email at becca@neilandbecca.com and we will see what we can do!</p>
     </TopicContainer>
 
     <TopicContainer id="venue">
-      <h1>The Venue</h1>
+      <h1>The Venue & The Celebration</h1>
+      <p>Please make sure to be at Fate at 6:00pm to grab your toasting drink!</p>
+      <p>Feel free to head to Fate early if you would like to have drinks at their public bar.</p>
+      <p>After party will be downtown on Pearl.</p>
+      <p>Dress is cocktail attire.</p>
+      <br></br>
       <div className="container">
         <div className="row">
           <p>Fate Brewing Company</p>
@@ -89,7 +92,7 @@ not elope and instead celebrate with everyone in their hometown.  They hope you 
       <h2>The Day After</h2>
       <div className="container">
         <div className="row">
-          <p className='left'>We will be putting on a super fun Boulder based scavanger hunt.  More details coming soon!</p>
+          <p className='left'>Sunday morning brunch. More details to come!</p>
           <br></br>
           <br></br>
           <h2>In & Around Boulder</h2>
