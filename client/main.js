@@ -89,7 +89,7 @@ not elope and instead celebrate with everyone in their hometown.  They hope you 
       <h2>The Day After</h2>
       <div className="container">
         <div className="row">
-          <p className='left'>We will be heading to the Royal Gorge for a phenomenol train ride.  More details coming soon!</p>
+          <p className='left'>We will be putting on a super fun Boulder based scavanger hunt.  More details coming soon!</p>
           <br></br>
           <br></br>
           <h2>In & Around Boulder</h2>
